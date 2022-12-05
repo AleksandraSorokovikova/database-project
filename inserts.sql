@@ -4,12 +4,12 @@ insert into online_courses.creators(creator_id, date_registered, occupation, cou
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (1, '2020-03-18 10:03:51.717643', 'Proffesor', 'USA');
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (2, '2018-10-01 01:53:42.895527', 'Student', 'Italy');
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (3, '2021-10-02 09:41:40.026321', 'Teacher', 'China');
-insert into online_courses.creators(creator_id, date_registered, occupation, country) values (4, '2020-01-13 02:37:52.671083', 'Student', 'Germany');
-insert into online_courses.creators(creator_id, date_registered, occupation, country) values (5, '2018-06-17 13:25:19.630109', 'Data Scientist', 'Italy');
+insert into online_courses.creators(creator_id, date_registered, occupation, country) values (4, '2020-01-13 02:37:52.671083', 'PhD', 'Germany');
+insert into online_courses.creators(creator_id, date_registered, occupation, country) values (5, '2018-06-17 13:25:19.630109', 'Data Scientist', 'Russia');
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (6, '2019-11-11 02:07:25.303011', 'Teacher', 'Germany');
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (7, '2018-05-08 15:27:53.776856', 'PhD', 'Russia');
-insert into online_courses.creators(creator_id, date_registered, occupation, country) values (8, '2020-09-08 11:21:20.029654', 'Backend developer', 'USA');
-insert into online_courses.creators(creator_id, date_registered, occupation, country) values (9, '2015-09-18 05:41:25.690879', 'CEO', 'China');
+insert into online_courses.creators(creator_id, date_registered, occupation, country) values (8, '2020-09-08 11:21:20.029654', 'Backend developer', 'Russia');
+insert into online_courses.creators(creator_id, date_registered, occupation, country) values (9, '2015-09-18 05:41:25.690879', 'CEO', 'Russia');
 
 
 insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (0, 1, 'English B2', '2020-11-20 06:47:05.262908', 0.72);
