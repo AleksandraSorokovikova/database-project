@@ -11,16 +11,23 @@ create table creators(
     country             varchar(50)
 );
 
-
 drop table if exists courses cascade;
 create table courses(
-    course_id           int primary key not null unique,
+    course_id           int not null,
     creator_id          int not null,
     title               varchar(100) not null,
     date_created        TIMESTAMP not null,
     rating              float8,
+    launch_number       int not null,
+    valid_from          TIMESTAMP not null,
+    valid_to            TIMESTAMP,
+    link_to_records     varchar(100),
+    is_able             bool not null,
+    primary key                             (course_id, launch_number),
     foreign key (creator_id)                references creators (creator_id),
-    constraint courses_rating_check         check ( rating >= 0 and rating <= 5 )
+    constraint courses_rating_check         check ( rating >= 0 and rating <= 5 ),
+    constraint unique_course_keys           unique (course_id, launch_number),
+    constraint course_is_able               check ((is_able = False) or (is_able = True and valid_to is null))
 );
 
 
@@ -34,13 +41,12 @@ create table users(
 
 drop table if exists user_course cascade;
 create table user_course(
-    user_id    int  not null,
-    course_id  int  not null,
+    user_id    int not null,
+    course_id  int not null,
     start_date TIMESTAMP not null,
     end_date   TIMESTAMP,
     primary key (user_id, course_id),
     foreign key (user_id)                   references users (user_id),
-    foreign key (course_id)                 references courses (course_id),
     constraint user_course_start_end_date   check ( start_date <= end_date )
 );
 
@@ -51,7 +57,6 @@ create table module(
     course_id           int not null,
     title               varchar(100) not null,
     complexity          varchar(10),
-    foreign key (course_id)                 references courses (course_id),
     constraint module_complexity_check      check (complexity in ('Easy', 'Medium', 'Hard'))
 );
 

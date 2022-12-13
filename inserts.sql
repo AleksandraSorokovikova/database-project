@@ -12,7 +12,12 @@ insert into online_courses.creators(creator_id, date_registered, occupation, cou
 insert into online_courses.creators(creator_id, date_registered, occupation, country) values (9, '2015-09-18 05:41:25.690879', 'CEO', 'Russia');
 
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (0, 1, 'English B2', '2020-11-20 06:47:05.262908', 0.72);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (0, 1, 'English B2', '2020-11-20 06:47:05.262908', 0.72, 3, '2021-02-20 06:47:05.262908', NULL, 'ub7sug8.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (0, 1, 'English B2', '2020-11-20 06:47:05.262908', 0.72, 2, '2021-01-20 06:47:05.262908', '2021-02-20 06:47:05.262908', 'iyd84bg.com', FALSE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (0, 1, 'English B2', '2020-11-20 06:47:05.262908', 0.72, 1, '2020-12-20 06:47:05.262908', '2022-01-20 06:47:05.262908', 'do88mrg.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (0, 0, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (0, 0, 'Element 1', 6);
 insert into online_courses.element(element_id, module_id, title, complexity) values (1, 0, 'Element 2', 1);
@@ -24,7 +29,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.module(module_id, course_id, title, complexity) values (2, 0, 'Quarter 3', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (6, 2, 'Element 1', 8);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (1, 0, 'Scala', '2019-09-16 05:50:58.018669', 4.77);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (1, 0, 'Scala', '2019-09-16 05:50:58.018669', 4.77, 1, '2019-09-16 05:50:58.018669', NULL, 'oigm84.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (3, 1, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (7, 3, 'Element 1', 4);
 insert into online_courses.module(module_id, course_id, title, complexity) values (4, 1, 'Quarter 2', 'Hard');
@@ -39,13 +45,17 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (14, 6, 'Element 3', 5);
 insert into online_courses.element(element_id, module_id, title, complexity) values (15, 6, 'Element 4', 10);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (2, 7, 'UI', '2019-04-27 09:57:53.669964', 1.81);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (2, 7, 'UI', '2019-04-27 09:57:53.669964', 1.81, 2, '2019-05-27 09:57:53.669964', NULL, 'uh8msi8t.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (2, 7, 'UI', '2019-04-27 09:57:53.669964', 1.81, 1, '2019-04-27 09:57:53.669964', '2019-04-27 09:57:53.669964', 'dfo84gj.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (7, 2, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (16, 7, 'Element 1', 4);
 insert into online_courses.element(element_id, module_id, title, complexity) values (17, 7, 'Element 2', 7);
 insert into online_courses.element(element_id, module_id, title, complexity) values (18, 7, 'Element 3', 2);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (3, 9, 'English A1', '2015-11-23 18:29:48.478940', 0.22);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (3, 9, 'English A1', '2015-11-23 18:29:48.478940', 0.22, 1, '2015-11-23 18:29:48.478940', NULL, 'do48gne.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (8, 3, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (19, 8, 'Element 1', 5);
 insert into online_courses.element(element_id, module_id, title, complexity) values (20, 8, 'Element 2', 6);
@@ -58,7 +68,10 @@ insert into online_courses.module(module_id, course_id, title, complexity) value
 insert into online_courses.element(element_id, module_id, title, complexity) values (24, 11, 'Element 1', 7);
 insert into online_courses.element(element_id, module_id, title, complexity) values (25, 11, 'Element 2', 1);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (4, 3, 'UX', '2021-11-09 20:04:02.407929', 0.51);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (4, 3, 'UX', '2021-11-09 20:04:02.407929', 0.51, 2, '2021-12-09 20:04:02.407929', NULL, 'dougo8n.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (4, 3, 'UX', '2021-11-09 20:04:02.407929', 0.51, 1, '2021-11-09 20:04:02.407929', '2021-12-09 20:04:02.407929', 'dougo8n.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (12, 4, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (26, 12, 'Element 1', 10);
 insert into online_courses.element(element_id, module_id, title, complexity) values (27, 12, 'Element 2', 9);
@@ -73,7 +86,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (34, 14, 'Element 3', 2);
 insert into online_courses.element(element_id, module_id, title, complexity) values (35, 14, 'Element 4', 7);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (5, 8, 'Data Engineering', '2020-11-28 22:26:10.941187', 2.71);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (5, 8, 'Data Engineering', '2020-11-28 22:26:10.941187', 2.71, 1, '2020-11-28 22:26:10.941187', NULL, 'dou48ng.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (15, 5, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (36, 15, 'Element 1', 8);
 insert into online_courses.element(element_id, module_id, title, complexity) values (37, 15, 'Element 2', 6);
@@ -84,7 +98,10 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (41, 16, 'Element 2', 2);
 insert into online_courses.element(element_id, module_id, title, complexity) values (42, 16, 'Element 3', 1);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (6, 3, 'Haskell', '2021-11-11 12:19:54.407997', 0.03);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (6, 3, 'Haskell', '2021-11-11 12:19:54.407997', 0.03, 2, '2021-12-11 12:19:54.407997', NULL, 'dfovh84.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (6, 3, 'Haskell', '2021-11-11 12:19:54.407997', 0.03, 1, '2021-11-11 12:19:54.407997', '2021-12-11 12:19:54.407997', '84jfnf.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (17, 6, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (43, 17, 'Element 1', 7);
 insert into online_courses.element(element_id, module_id, title, complexity) values (44, 17, 'Element 2', 10);
@@ -96,13 +113,17 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (48, 19, 'Element 3', 3);
 insert into online_courses.element(element_id, module_id, title, complexity) values (49, 19, 'Element 4', 8);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (7, 1, 'SE', '2020-10-11 03:09:04.904928', 0.88);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (7, 1, 'SE', '2020-10-11 03:09:04.904928', 0.88, 1, '2020-10-11 03:09:04.904928', NULL, '8nwpvne.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (20, 7, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (50, 20, 'Element 1', 8);
 insert into online_courses.module(module_id, course_id, title, complexity) values (21, 7, 'Quarter 2', 'Medium');
 insert into online_courses.element(element_id, module_id, title, complexity) values (51, 21, 'Element 1', 6);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (8, 3, 'Deep learning', '2022-06-13 14:45:34.664590', 3.10);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (8, 3, 'Deep learning', '2022-06-13 14:45:34.664590', 3.10, 2, '2022-08-13 14:45:34.664590', NULL, 'fno38g.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (8, 3, 'Deep learning', '2022-06-13 14:45:34.664590', 3.10, 1, '2022-07-13 14:45:34.664590', '2022-08-13 14:45:34.664590', 'fno38g.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (22, 8, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (52, 22, 'Element 1', 4);
 insert into online_courses.element(element_id, module_id, title, complexity) values (53, 22, 'Element 2', 9);
@@ -117,7 +138,8 @@ insert into online_courses.module(module_id, course_id, title, complexity) value
 insert into online_courses.element(element_id, module_id, title, complexity) values (59, 25, 'Element 1', 10);
 insert into online_courses.element(element_id, module_id, title, complexity) values (60, 25, 'Element 2', 1);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (9, 5, 'Java', '2019-01-03 17:03:46.418269', 3.01);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (9, 5, 'Java', '2019-01-03 17:03:46.418269', 3.01, 1, '2019-01-03 17:03:46.418269', NULL, 'o8nebwo8.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (26, 9, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (61, 26, 'Element 1', 5);
 insert into online_courses.element(element_id, module_id, title, complexity) values (62, 26, 'Element 2', 9);
@@ -127,7 +149,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (65, 27, 'Element 3', 9);
 insert into online_courses.element(element_id, module_id, title, complexity) values (66, 27, 'Element 4', 10);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (10, 3, 'Kotlin', '2022-01-17 19:20:11.237872', 0.39);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (10, 3, 'Kotlin', '2022-01-17 19:20:11.237872', 0.39, 1, '2022-01-17 19:20:11.237872', NULL, 'n9s88s.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (28, 10, 'Quarter 1', 'Medium');
 insert into online_courses.element(element_id, module_id, title, complexity) values (67, 28, 'Element 1', 5);
 insert into online_courses.element(element_id, module_id, title, complexity) values (68, 28, 'Element 2', 8);
@@ -137,7 +160,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (71, 29, 'Element 2', 1);
 insert into online_courses.element(element_id, module_id, title, complexity) values (72, 29, 'Element 3', 3);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (11, 8, 'Spark', '2021-01-09 04:56:26.096417', 4.74);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (11, 8, 'Spark', '2021-01-09 04:56:26.096417', 4.74, 1, '2021-01-09 04:56:26.096417', NULL, '8nweogdf.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (30, 11, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (73, 30, 'Element 1', 8);
 insert into online_courses.module(module_id, course_id, title, complexity) values (31, 11, 'Quarter 2', 'Easy');
@@ -146,7 +170,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.module(module_id, course_id, title, complexity) values (32, 11, 'Quarter 3', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (76, 32, 'Element 1', 7);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (12, 3, 'Data Science', '2022-06-06 11:48:43.755767', 3.25);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (12, 3, 'Data Science', '2022-06-06 11:48:43.755767', 3.25, 1, '2022-06-06 11:48:43.755767', NULL, 'ng8sn8.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (33, 12, 'Quarter 1', 'Medium');
 insert into online_courses.element(element_id, module_id, title, complexity) values (77, 33, 'Element 1', 3);
 insert into online_courses.element(element_id, module_id, title, complexity) values (78, 33, 'Element 2', 7);
@@ -162,7 +187,8 @@ insert into online_courses.module(module_id, course_id, title, complexity) value
 insert into online_courses.element(element_id, module_id, title, complexity) values (85, 36, 'Element 1', 8);
 insert into online_courses.element(element_id, module_id, title, complexity) values (86, 36, 'Element 2', 4);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (13, 3, 'Frontend Developer', '2022-03-25 10:11:05.435761', 1.07);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (13, 3, 'Frontend Developer', '2022-03-25 10:11:05.435761', 1.07, 1, '2022-03-25 10:11:05.435761', NULL, 'dmof87.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (37, 13, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (87, 37, 'Element 1', 9);
 insert into online_courses.element(element_id, module_id, title, complexity) values (88, 37, 'Element 2', 6);
@@ -175,7 +201,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (93, 39, 'Element 2', 4);
 insert into online_courses.element(element_id, module_id, title, complexity) values (94, 39, 'Element 3', 10);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (14, 3, 'Python', '2022-04-13 01:40:37.896252', 2.73);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (14, 3, 'Python', '2022-04-13 01:40:37.896252', 2.73, 1, '2022-04-13 01:40:37.896252', NULL, 'soufyb8.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (40, 14, 'Quarter 1', 'Hard');
 insert into online_courses.element(element_id, module_id, title, complexity) values (95, 40, 'Element 1', 6);
 insert into online_courses.module(module_id, course_id, title, complexity) values (41, 14, 'Quarter 2', 'Hard');
@@ -188,7 +215,10 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (101, 42, 'Element 3', 2);
 insert into online_courses.element(element_id, module_id, title, complexity) values (102, 42, 'Element 4', 10);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (15, 0, 'C++', '2019-10-10 08:13:54.420863', 0.57);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (15, 0, 'C++', '2019-10-10 08:13:54.420863', 0.57, 2, '2019-11-10 08:13:54.420863', NULL, 'udfyo8gs.com', TRUE);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (15, 0, 'C++', '2019-10-10 08:13:54.420863', 0.57, 1, '2019-10-10 08:13:54.420863', '2019-11-10 08:13:54.420863', 'dlbyj8w.com', FALSE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (43, 15, 'Quarter 1', 'Easy');
 insert into online_courses.element(element_id, module_id, title, complexity) values (103, 43, 'Element 1', 10);
 insert into online_courses.module(module_id, course_id, title, complexity) values (44, 15, 'Quarter 2', 'Hard');
@@ -203,7 +233,8 @@ insert into online_courses.element(element_id, module_id, title, complexity) val
 insert into online_courses.element(element_id, module_id, title, complexity) values (110, 46, 'Element 2', 3);
 insert into online_courses.element(element_id, module_id, title, complexity) values (111, 46, 'Element 3', 10);
 
-insert into online_courses.courses(course_id, creator_id, title, date_created, rating) values (16, 6, 'History', '2020-04-25 20:48:39.211894', 0.24);
+insert into online_courses.courses(course_id, creator_id, title, date_created, rating, launch_number, valid_from, valid_to, link_to_records, is_able)
+values (16, 6, 'History', '2020-04-25 20:48:39.211894', 0.24, 1, '2020-04-25 20:48:39.211894', NULL, 'odiuy8w.com', TRUE);
 insert into online_courses.module(module_id, course_id, title, complexity) values (47, 16, 'Quarter 1', 'Medium');
 insert into online_courses.element(element_id, module_id, title, complexity) values (112, 47, 'Element 1', 5);
 insert into online_courses.element(element_id, module_id, title, complexity) values (113, 47, 'Element 2', 7);

@@ -10,13 +10,28 @@ select
 from
     online_courses.courses
 left join online_courses.creators c on c.creator_id = courses.creator_id
+where
+    is_able = True
 group by
     c.creator_id
 having
     count(*) >= 2;
 
 
--- для каждой профессии найти курсы, которые имеют наивысший рейтинг среди курсов, принадлежащих данной профессии
+-- для каждого создателя курса вывести ссылку на все курсы, запуски которых уже завершены
+select
+    c.creator_id,
+    course_id,
+    title,
+    link_to_records
+from
+    online_courses.courses
+left join online_courses.creators c on c.creator_id = courses.creator_id
+where
+    is_able = False;
+
+
+-- для каждой профессии найти курсы, которые имеют наивысший рейтинг среди курсов, принадлежащим данной профессии
 
 select
     occupation, title, max_rating
@@ -27,6 +42,8 @@ from (
         online_courses.courses
     right join
         online_courses.creators c on courses.creator_id = c.creator_id
+    where
+        is_able = True
     ) as max_rating
 where
     max_rating.rating = max_rating.max_rating
@@ -52,10 +69,13 @@ from (
         online_courses.module m on courses.course_id = m.course_id
     right join
         online_courses.element e on m.module_id = e.module_id
+    where
+        is_able = True
     ) as min_complexity
 where
     min_complexity = element_complexity
 order by min_complexity;
+
 
 
 -- для каждого создателя курса вывести наиболее популярный курс из всех, которые он создал
@@ -78,6 +98,8 @@ from
                 online_courses.courses
             right join
                 online_courses.user_course u on u.course_id = courses.course_id
+            where
+                is_able = True
          ) as number_of_users
 ) as max_number_of_users
 where max_number_of_users = number_of_users;
@@ -107,6 +129,8 @@ from (
                 online_courses.module m on courses.course_id = m.course_id
             right join
                 online_courses.element e on m.module_id = e.module_id
+            where
+                is_able = True
             group by
                 courses.course_id, courses.title
             ) as avg_complexity on avg_complexity.course_id = user_course.course_id
@@ -148,10 +172,12 @@ from
                         courses.title     as title,
                         e.element_id      as element_id
                  from online_courses.courses
-                          right join
+                 right join
                       online_courses.module m on courses.course_id = m.course_id
-                          left join
+                 left join
                       online_courses.element e on m.module_id = e.module_id
+                 where
+                      is_able = True
              ) users_element on users_element.element_id = user_element.element_id
     ) as number_of_elements
 ) as max_number_of_elements
